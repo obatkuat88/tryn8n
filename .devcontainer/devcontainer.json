@@ -1,0 +1,12 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "postStartCommand": "python app.py",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "File Downloader",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
